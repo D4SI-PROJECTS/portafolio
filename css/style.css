@@ -1,0 +1,80 @@
+:root{
+    --header-h: 100px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #070723;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--header-h);
+    /* background: #000; */
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    width: 50px;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #F73155;
+    font-weight: 600;
+}
+
+
+.content{
+    padding-top: var(--header-h);
+}
+.content .home{
+    height: calc(100vh - var(--header-h));
+
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .home .c-img{
+    width: 48%;
+    height: 25vh;
+}
+.content .home .text-btn-home{
+    width: 48%;
+    height: 25vh;
+    border-left: 3px solid #F73155;
+    padding-left: 15px;
+
+    position: relative;
+}
+.content .home .text-btn-home p{
+    color: #FCA184;
+}
+.content .home .text-btn-home button{
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+
+    padding: 22px 80px;
+    font-size: 20px;
+    background: none;
+    border: 2px solid #F73155;
+    color: #F73155;
+    margin-top: auto;
+}
